@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Quote System</title>
+</head>
+<body>
+
+<h1>Emotion-Aware Quote System</h1>
+
+<form method="POST">
+    <textarea name="text" rows="5" cols="40" placeholder="How are you feeling?"></textarea>
+    <br><br>
+    <button type="submit">Analyze</button>
+</form>
+
+{% if result %}
+    <h2>Emotion: {{ emotion }}</h2>
+    <p><b>Quote:</b> {{ result }}</p>
+{% endif %}
+
+</body>
+</html>
